@@ -17,7 +17,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-elevenlabs-sdk = { path = "crates/elevenlabs-sdk" }
+elevenlabs-sdk = "0.1.0"
 tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
 ```
 
