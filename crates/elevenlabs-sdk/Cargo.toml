@@ -12,12 +12,8 @@ documentation = "https://docs.rs/elevenlabs-sdk"
 keywords = [
     "elevenlabs",
     "tts",
-    "text-to-speech",
-    "speech-to-text",
     "stt",
     "voice",
-    "audio",
-    "ai",
     "websocket",
 ]
 categories = [
