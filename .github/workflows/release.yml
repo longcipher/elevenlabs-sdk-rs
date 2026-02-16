@@ -31,8 +31,8 @@ jobs:
 
       - name: Check Cargo.toml version
         run: |
-          # Get the version of the 'hpx' package which inherits from workspace
-          CARGO_VERSION=$(cargo metadata --no-deps --format-version 1 | jq -r '.packages[] | select(.name == "hpx") | .version')
+          # Get the workspace version from the root Cargo.toml
+          CARGO_VERSION=$(grep '^version =' Cargo.toml | head -n 1 | cut -d '"' -f 2)
           
           echo "Cargo version: $CARGO_VERSION"
           echo "Tag version: ${{ env.VERSION }}"
