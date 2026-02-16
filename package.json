@@ -1,0 +1,17 @@
+{
+  "name": "elevenlabs-sdk-rs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dev tooling for elevenlabs-sdk-rs workspace",
+  "devDependencies": {
+    "@stoplight/prism-cli": "^5.14.2"
+  },
+  "scripts": {
+    "prism:start": "prism mock docs/openapi.json --port 4010 --host 127.0.0.1",
+    "prism:start:dynamic": "prism mock docs/openapi.json --port 4010 --host 127.0.0.1 --dynamic"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "openapi-backend": "^5.15.0"
+  }
+}
