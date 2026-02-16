@@ -8,7 +8,7 @@ description = "Command-line interface for the ElevenLabs API"
 [dependencies]
 base64 = { workspace = true }
 clap = { workspace = true, features = ["derive", "env"] }
-elevenlabs-sdk = { path = "../../crates/elevenlabs-sdk" }
+elevenlabs-sdk = { workspace = true }
 eyre = { workspace = true }
 futures-util = { workspace = true }
 serde = { workspace = true }
