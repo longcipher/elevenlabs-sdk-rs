@@ -2,7 +2,7 @@
 version = "0.1.0"
 edition = "2024"
 license = "Apache-2.0"
-repository = "TODO"
+repository = "https://github.com/longcipher/elevenlabs-sdk-rs"
 
 [workspace]
 members = ["crates/*", "bin/*"]
