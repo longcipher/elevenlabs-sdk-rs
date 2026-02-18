@@ -20,7 +20,7 @@ categories = [
     "api-bindings",
     "asynchronous",
     "multimedia::audio",
-    "network::web-servers",
+    "network-programming",
 ]
 
 [dependencies]
