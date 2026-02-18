@@ -112,19 +112,19 @@ sdk-check-coverage:
 
 # Build the CLI binary
 cli-build:
-  cargo build -p elevenlabs-cli
+  cargo build -p elevenlabs-bin-cli
 
 # Run CLI clippy lints
 cli-lint:
-  cargo clippy -p elevenlabs-cli -- -D warnings
+  cargo clippy -p elevenlabs-bin-cli -- -D warnings
 
 # Run the CLI (pass arguments after --)
 cli-run *ARGS:
-  cargo run -p elevenlabs-cli -- {{ARGS}}
+  cargo run -p elevenlabs-bin-cli -- {{ARGS}}
 
 # Install the CLI locally
 cli-install:
-  cargo install --path bin/elevenlabs-cli
+  cargo install --path bin/elevenlabs-bin-cli
 
 # ============================================================
 # Publishing

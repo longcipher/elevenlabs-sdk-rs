@@ -68,7 +68,7 @@ async fn main() -> eyre::Result<()> {
             cli::Commands::Ws(args) => commands::ws::execute(args, &cli).await?,
         },
         None => {
-            eprintln!("elevenlabs-cli — use --help for usage information");
+            eprintln!("elevenlabs-bin-cli — use --help for usage information");
         }
     }
 

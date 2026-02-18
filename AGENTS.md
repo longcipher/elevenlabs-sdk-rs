@@ -15,7 +15,7 @@ elevenlabs-sdk-rs/
 ├── docs/openapi.json         # ElevenLabs OpenAPI spec (source of truth)
 ├── scripts/check_coverage.py # Endpoint coverage checker
 ├── bin/
-│   ├── elevenlabs-cli/       # CLI binary (clap-based)
+│   ├── elevenlabs-bin-cli/       # CLI binary (clap-based)
 │   │   └── src/
 │   │       ├── main.rs        # Entry point & command dispatch
 │   │       ├── cli.rs         # Cli struct & Commands enum
@@ -100,6 +100,6 @@ just format               # Format everything
 3. Re-export from `services/mod.rs` and `types/mod.rs`
 4. Add accessor method on `ElevenLabsClient` in `client.rs`
 5. Re-export the service type from `lib.rs`
-6. Add CLI command module in `bin/elevenlabs-cli/src/commands/<name>.rs`
+6. Add CLI command module in `bin/elevenlabs-bin-cli/src/commands/<name>.rs`
 7. Register the command in `cli.rs` and `main.rs`
 8. Run `just sdk-test && just sdk-lint && just cli-lint`
